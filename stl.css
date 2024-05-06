@@ -79,12 +79,6 @@ table{
     text-align: center;
     font-weight: bold;
     font-size: 120px;
-    text-shadow:
-    -3px -3px 0 black,
-    3px -3px 0 black,
-    -3px 3px 0 black,
-    3px 3px 0 black;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -122,11 +116,6 @@ td{
     }
     #center{
         font-size: 40px;
-        text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
     }
 
     #top .lnk{
@@ -139,4 +128,10 @@ td{
         font-size: 20px;
     }
     
+}
+
+@media only screen and (min-width: 600px) {
+    #center {
+        -webkit-text-stroke: 3px black;
+    }
 }
