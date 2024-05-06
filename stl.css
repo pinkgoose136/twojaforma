@@ -1,6 +1,8 @@
 body {
     background-image: url('img/bc1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -77,13 +79,20 @@ table{
     text-align: center;
     font-weight: bold;
     font-size: 120px;
-    -webkit-text-stroke: 5px black;
+    text-shadow:
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60%;
     font-style: italic;
+    display: flex;
 }
+
 
 #top {
     align-items: center;
@@ -102,4 +111,32 @@ td{
 
 #down, #top {
     display: flex;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .lnk {
+        width: 80px;
+        font-size: 12px;
+    }
+    #center{
+        font-size: 40px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    #top .lnk{
+        margin-left: auto;
+        margin-right: 20px; 
+    }
+    
+    #top h1{
+        margin-left: 25px;
+        font-size: 20px;
+    }
+    
 }
